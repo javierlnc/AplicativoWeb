@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root{
+            --white:#FFFFFF;
+            --black:#000000;
+            --grey:#696969;
+            --input-field: #BEB4D9;
+            --purple:#9989c0;
+            --sf:1.6rem;
+            --mf:1.9rem;
+            --bf:2.4rem;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size:62.5%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .card-container{
+            display:grid;
+            grid-template-columns: repeat(auto-fill,240px);
+            gap:20px;
+            place-content: center;
+        }
+        .product-card{
+            width: 240px;
+            border-radius: 20px;
+            border: 1px solid var(--purple);
+            box-shadow: 0px 10px 11px rgba(0, 0, 0, 0.1);           
+        }
+        .product-img{
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .product-info{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding: 10px 8px;
+        }
+        .product-info div p:nth-child(1){
+            font-weight:bold;
+            font-size:var(--sf);
+            margin-bottom: 4px;
+        }
+        @media (max-width: 640px){
+            .card-container{
+                grid-template-columns: repeat(auto-fill,140px);
+            }
+            .product-card{
+                width: 140px;    
+            }
+            .product-img{
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="mainContent">
+        <section class="card-container">
+            <div class="product-card">
+                <img src="https://s3.amazonaws.com/storage.wobiz.com/199/199302/images/Large/1624480686_417e2e36d7a8960d7e4cc790e6c31fd1.199302.png" alt="" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre del prodcuto</p>   
+                    </div>                   
+                    <figure>
+                        <img src="../assets/addToCar.svg" alt="">
+                    </figure>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img src="https://s3.amazonaws.com/storage.wobiz.com/199/199302/images/Large/1624480686_417e2e36d7a8960d7e4cc790e6c31fd1.199302.png" alt="" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre del prodcuto</p>   
+                    </div>                   
+                    <figure>
+                        <img src="../assets/addToCar.svg" alt="">
+                    </figure>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img src="https://s3.amazonaws.com/storage.wobiz.com/199/199302/images/Large/1624480686_417e2e36d7a8960d7e4cc790e6c31fd1.199302.png" alt="" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre del prodcuto</p>   
+                    </div>                   
+                    <figure>
+                        <img src="../assets/addToCar.svg" alt="">
+                    </figure>
+                </div>
+            </div>     <div class="product-card">
+                <img src="https://s3.amazonaws.com/storage.wobiz.com/199/199302/images/Large/1624480686_417e2e36d7a8960d7e4cc790e6c31fd1.199302.png" alt="" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre del prodcuto</p>   
+                    </div>                   
+                    <figure>
+                        <img src="../assets/addToCar.svg" alt="">
+                    </figure>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img src="https://s3.amazonaws.com/storage.wobiz.com/199/199302/images/Large/1624480686_417e2e36d7a8960d7e4cc790e6c31fd1.199302.png" alt="" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre del prodcuto</p>   
+                    </div>                   
+                    <figure>
+                        <img src="../assets/addToCar.svg" alt="">
+                    </figure>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img src="https://s3.amazonaws.com/storage.wobiz.com/199/199302/images/Large/1624480686_417e2e36d7a8960d7e4cc790e6c31fd1.199302.png" alt="" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre del prodcuto</p>   
+                    </div>                   
+                    <figure>
+                        <img src="../assets/addToCar.svg" alt="">
+                    </figure>
+                </div>
+            </div> 
+            <div class="product-card">
+                <img src="https://s3.amazonaws.com/storage.wobiz.com/199/199302/images/Large/1624480686_417e2e36d7a8960d7e4cc790e6c31fd1.199302.png" alt="" class="product-img">
+                <div class="product-info">
+                    <div>
+                        <p>Precio</p>
+                        <p>Nombre del prodcuto</p>   
+                    </div>                   
+                    <figure>
+                        <img src="../assets/addToCar.svg" alt="">
+                    </figure>
+                </div>
+            </div>    
+        </section>
+    </main>
+</body>
+</html>

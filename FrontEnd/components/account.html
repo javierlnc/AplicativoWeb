@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+            --white:#FFFFFF;
+            --black:#000000;
+            --grey:#696969;
+            --input-field: #BEB4D9;
+            --purple:#9989c0;
+            --sf:1.6rem;
+            --mf:1.9rem;
+            --bf:2.4rem;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size:62.5%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .mainContent{
+            width: 100%;
+            height:100vh;
+            display: grid;
+            place-items: center;
+        }
+        .mainForm{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width:320px;
+           
+        }
+        .mainForm div{
+            display: flex;
+            flex-direction: column;
+        }
+        .mainForm h1{
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: bold;
+            font-size: var(--bf);
+            line-height: 3.2rem;
+            text-align: left;
+            margin: 30px 10px;
+        }
+        .form--label{
+            font-size:var(--sf);
+            font-weight:bold;
+            line-height:2rem;
+            margin:10px;
+        }
+        .value{
+            color:var(--grey);
+            font-size: var(--sf);
+            text-align: center;
+        }
+        .secundary-button{
+            height:30px;
+            margin:30px;
+            width:80%;
+            background-color:var(--white);
+            cursor:pointer;
+            font-size:var(--sf);
+            font-weight:bold;
+            border: 1px solid var(--purple);
+            border-radius: 30px;
+            color:var(--purple);
+        }
+        @media(max-width:640px){
+            .mainForm{
+                width: 300px;
+            }
+            .mainForm--form{
+                height: 100%;
+                justify-content: space-between;
+            }
+            .mainForm{
+                height: 100%;
+            }
+        }
+
+</style>
+<body>
+    <main class="mainContent">
+        <section class="mainForm">
+            <h1>Mi cuenta</h1>           
+            <form action="/" class="mainForm--form">
+                <div>
+                <label for="name" class="form--label">Nombre</label>
+                <p class="value">Nombre y apellido</p>
+                <label for="email" class="form--label">Email</label>
+                <p class="value">tucorreo@example.com</p>
+                <label for="password" class="form--label">Contraseña</label>
+                <p class="value">********</p>
+                <label for="re-password" class="form--label">Confirma tu contraseña</label>
+                <p class="value">********</p>
+                </div>
+                <input type="submit" value="Editar" class="secundary-button">
+            </form>
+        </section>
+    </main>  
+</body>
+</html>

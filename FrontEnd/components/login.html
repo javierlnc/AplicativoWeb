@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+         :root{
+            --white:#FFFFFF;
+            --black:#000000;
+            --grey:#696969;
+            --input-field: #BEB4D9;
+            --purple:#9989c0;
+            --sf:1.6rem;
+            --mf:1.9rem;
+            --bf:2.4rem;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size:62.5%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .mainContent{
+            width: 100%;
+            height:100vh;
+            display: grid;
+            place-items: center;
+        }
+        .mainForm{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width:300px;
+            justify-items: center;
+        }
+        .mainForm--logo{
+            width:250px;
+            margin-bottom: 40px;
+            justify-self: center;
+            display:none;
+        }
+        .mainForm--form{
+            display: flex;
+            flex-direction: column;
+            width:200px;
+        }
+        .mainForm--form a{
+            text-decoration: none;
+            text-align: center;
+            font-size: var(--sf);
+            line-height:1.9rem;
+            font-weight: 300;
+            color:var(--purple);
+            margin-bottom: 55px;
+        }
+        .mainForm h1{
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: bold;
+            font-size: var(--bf);
+            line-height: 3.2rem;
+            text-align: center;
+        }
+        .mainForm p{
+            font-size:var(--mf);
+            font-weight: 300;
+            line-height: 1.9rem;
+            text-align: center;
+            color: var(--grey);
+        }
+        .mainForm--form{
+            display: flex;
+            flex-direction: column;
+        }
+        .form--label{
+            font-size:var(--sf);
+            font-weight:bold;
+            line-height:2rem;
+            margin:10px;
+        }
+        .form--input{
+            background-color:var(--input-field);
+            border:none;
+            border-radius: 30px;
+            height:30px;
+            width: 100%;
+            font-size:var(--sf);
+            padding: 6px;
+            text-align: center;
+        }
+        .form--button{
+            height:30px;
+            margin:30px;
+            width:70%;
+            background-color:var(--purple);
+            cursor:pointer;
+            font-size:var(--sf);
+            border: none;
+            border-radius: 30px;
+            color:var(--white);
+        }
+        .secundary-button{
+            height:30px;
+            margin:30px;
+            width:70%;
+            background-color:var(--white);
+            cursor:pointer;
+            font-size:var(--sf);
+            font-weight:bold;
+            border: 1px solid var(--purple);
+            border-radius: 30px;
+            color:var(--purple);
+        }
+        @media(max-width:640px){
+            .mainForm--logo{
+                display: block;
+            }
+            .secundary-button {
+                max-width:256px;
+                width: 80%;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 14px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <main class="mainContent">
+        <section class="mainForm">
+            <img src="../assets/logoTrillizas.svg" alt="logo" class="mainForm--logo">
+            <form action="/" class="mainForm--form">
+                <label for="email" class="form--label">Email</label>
+                <input type="email" placeholder="tucorreo@example.com" id="email"class="form--input">
+                <label for="password" class="form--label">Contraseña</label>
+                <input type="password" placeholder="********"id="password" class="form--input">
+                <input type="submit" value="Iniciar Sesion" class="form--button">
+                <a href="/">¿Haz olvidado tu contraseña?</a>
+            </form>
+                <button class="secundary-button">Registrate</button>
+
+        </section>
+    </main>   
+</body>
+</html>
