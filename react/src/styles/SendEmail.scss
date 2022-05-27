@@ -1,23 +1,23 @@
 @use '_vars';
-.passwordRecovery{
+.sendEmail{
     width: 100%;
     height:100vh;
     display: grid;
     place-items: center;
 }
-.passwordRecovery-container{
+.mainForm{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width:300px;
     justify-items: center;
 }
-.logo{
+.mainForm--logo{
     width:250px;
     margin-bottom: 40px;
     justify-self: center;
     display:none;
 }
-.passwordRecovery-container h1{
+.mainForm h1{
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: bold;
@@ -25,7 +25,7 @@
     line-height: 3.2rem;
     text-align: center;
 }
-.passwordRecovery-container p{
+.mainForm p{
     font-size:var(--sf);
     font-weight: 300;
     line-height: 1.9rem;
@@ -57,10 +57,10 @@
     border-radius: 30px;
     color:white;
 }
-.passwordRecovery-container a{
+.mainForm a{
     text-decoration: none;
     font-weight: bold;
-    color: var(--purple);
+    color: #9989C0;
 }
 @media(max-width:640px){
     .mainForm--logo{

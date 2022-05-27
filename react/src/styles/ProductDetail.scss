@@ -1,0 +1,20 @@
+@use 'vars';
+.product-detail{
+    width: 300px;
+    padding-bottom: 24px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+}
+.product-detail-close img:nth-child(1){
+    cursor: pointer;
+    position: absolute;
+    top:12px;
+    left:12px;
+}
+.product-detail > img:nth-child(2){
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}

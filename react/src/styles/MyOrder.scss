@@ -1,0 +1,21 @@
+@use 'vars';
+.product-detail{
+    width: 300px;
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+}
+.title-container{
+    display: flex;
+    align-items: center;
+    padding:10px;
+    border-bottom: 1px solid var(--input-field);
+}
+.title-container img{
+    transform: rotate(180deg);
+}
+.title{
+    font-size:var(--bf);
+    margin-left: 20px;
+}

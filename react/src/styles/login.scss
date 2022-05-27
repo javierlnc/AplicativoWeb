@@ -1,45 +1,39 @@
 @use '_vars';
-.mainContent{
+.login{
     width:100%;
     height:100vh;
     display:grid;
     place-items: center;
 }
-.mainForm{
+.login-container{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width:300px;
 }
-.mainForm--logo{
+.login-container--logo{
     width:250px;
     margin-bottom: 40px;
     justify-self: center;
     display:none;
 }
-.mainForm h1{
-font-family: 'Playfair Display';
-font-style: normal;
-font-weight: bold;
-font-size: var(--bf);
-line-height: 3.2rem;
-text-align: center;
+.login-container--form{
+    display: flex;
+    flex-direction: column;
 }
-.mainForm p{
-font-size:var(--mf);
-font-weight: 300;
-line-height: 1.9rem;
-text-align: center;
-color: var(--grey);
-}
-.mainForm--form{
-display: flex;
-flex-direction: column;
+.login-container--form a{
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--sf);
+    line-height:1.9rem;
+    font-weight: 300;
+    color:var(--purple);
+    margin-bottom: 55px;
 }
 .form--label{
-font-size:var(--sf);
-font-weight:bold;
-line-height:2rem;
-margin:10px;
+    font-size:var(--sf);
+    font-weight:bold;
+    line-height:2rem;
+    margin:10px;
 }
 .form--input{
 background-color:var(--input-field);
@@ -61,8 +55,27 @@ border: none;
 border-radius: 30px;
 color:var(--white);
 }
+.secundary-button{
+    height:30px;
+    margin:30px;
+    width:70%;
+    background-color:var(--white);
+    cursor:pointer;
+    font-size:var(--sf);
+    font-weight:bold;
+    border: 1px solid var(--purple);
+    border-radius: 30px;
+    color:var(--purple);
+}
 @media(max-width:640px){
-    .mainForm--logo{
+    .login-container--logo{
         display: block;
+    }
+    .secundary-button {
+        max-width:256px;
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 14px;
     }
 }

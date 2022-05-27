@@ -1,0 +1,38 @@
+@use '_vars';
+.ProductInfo p:nth-child(1){
+    font-size: var(--mf);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.ProductInfo p:nth-child(2){
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: var(--grey);
+    font-size: var(--mf);
+}
+.ProductInfo p:nth-child(3){
+    font-size: var(--sf);
+    color: var(--grey);
+    margin-bottom: 0;
+    margin-bottom: 20px;
+}
+.form--button{
+    height:30px;
+    margin:30px 0;
+    width:100%;
+    background-color:var(--purple);
+    cursor:pointer;
+    font-size:var(--sf);
+    border: none;
+    border-radius: 30px;
+    color:var(--white);
+}
+.button-car{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-car img{
+    margin-right: 5px;;
+
+}

@@ -2,9 +2,9 @@ import React from 'react';
 import '../styles/recoveryPassword.scss';
 const RecoveryPassword = () => {
     return (
-        <main className="mainContent">
-            <section className="mainForm">
-                <img src="../assets/logoTrillizas.svg" alt="logo" className="mainForm--logo" />
+        <div className="passwordRecovery">
+            <section className="passwordRecovery-container">
+                <img src="../assets/logoTrillizas.svg" alt="logo" className="logo" />
                 <h1>Correo Enviado</h1>
                 <p>Por favor revisa tu correo, te hemos enviado un link para recuperar tu contraseña</p>
                 <div className="email-logo">
@@ -16,7 +16,7 @@ const RecoveryPassword = () => {
                     <a href="/">Reenviar</a>
                 </p>
             </section>
-            </main>
+        </div>
 
     
     );
