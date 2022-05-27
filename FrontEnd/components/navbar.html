@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root{
+            --white:#FFFFFF;
+            --black:#000000;
+            --grey:#696969;
+            --input-field: #BEB4D9;
+            --purple:#9989c0;
+            --sf:1.6rem;
+            --mf:1.9rem;
+            --bf:2.4rem;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size:62.5%;
+            font-family: 'Open Sans', sans-serif;
+        }
+        nav{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            width: 100%;
+            padding: 20px;
+            align-items: center;
+            border-bottom: 1px solid var(--input-field);
+        }
+        .navbar-center{
+            display: flex;
+            justify-self: center;
+        }
+        .menu{
+            display:none;
+        }
+        .logo{
+            width: 150px;
+        }
+        
+        .navbar-center ul, .navbar-right ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;        
+        }
+        .navbar-center a{
+            text-decoration: none;
+            color: var(--black);
+            padding: 8px;
+            border-radius: 5px;
+            font-size: var(--sf);
+        }
+        .navbar-center ul li a:hover{
+            color: var(--purple);
+            border: 1px solid var(--purple);
+        }
+        .navbar-right{
+            justify-self: end;
+        }
+        .navbar-email{
+            color: var(--grey);
+            font-size: var(--sf);
+            margin-right: 10px;
+        }
+        .navbar-shopping-car{
+            position: relative;
+        }
+        .navbar-shopping-car div{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: var(--purple);
+            position: absolute;
+            top: -5px;
+            right: -3px;
+            display: flex;
+            place-content: center;
+        }
+        @media (max-width:640px){
+            .menu{
+                display: block;
+            }
+            .navbar-left{
+                justify-self: center;
+            }
+            .navbar-center, .navbar-email{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    
+        <img src="../assets/menu.svg" alt="menu" class="menu">
+        <div class="navbar-left">
+            <img src="../assets/logoTrillizas.svg" alt="logo" class="logo">
+
+        </div>
+    
+        <div class="navbar-center">
+            <ul>
+                <li><a href="/">Mi cuenta</a></li>
+                <li><a href="/">Productos</a></li>
+                <li><a href="/">About Us</a></li>
+            </ul>
+    
+
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li class="navbar-email">tucorreo@example.com</li>
+                <li class="navbar-shopping-car">
+                    <img src="../assets/shoppingCar1.svg" alt="Shopping Car">
+                    <div>2</div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    
+</body>
+</html>

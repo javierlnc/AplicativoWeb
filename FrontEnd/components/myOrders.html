@@ -34,7 +34,7 @@
         }
         .title{
             font-size: var(--bf);
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .my-order-container{
             display: grid;
@@ -48,17 +48,14 @@
         }
         .title{
             font-size:var(--bf);
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         .order{
             display: grid;
-            grid-template-columns:auto 1fr;
+            grid-template-columns:auto 1fr auto;
             gap: 16px;
-            background-color:var(--input-field);
-            margin-bottom: 24px;
-            border-radius: 8px;
+            margin-bottom: 15px;
             align-items: center;
-            padding: 5px 24px;
         }
         .order p:nth-child(1){
             display: flex;
@@ -77,38 +74,17 @@
             font-weight: bold;
             font-size: var(--mf);
         }
-        .shopping-car{
-            display: grid;
-            grid-template-columns:auto 1fr auto;
-            gap:16px;
-            margin-bottom: 20px;;
-            align-items: center;
+        @media (max-width:640px){
+            .my-order{
+                padding: 20px;
+            }
         }
-        .shopping-car figure{
-            margin:0;
-        }
-        .shopping-car figure img{
-            width:70px;
-            height:70px;
-            border-radius: 20px;
-            object-fit: cover;
-        }
-        .shopping-car p:nth-child(2){
-            color: var(--grey);
-        }
-        .shopping-car p:nth-child(3){
-            font-size: var(--sf);
-            font-weight:bold;
-        }
-
-
-        
     </style>
 </head>
 <body>
     <section class="my-order">
         <div class="my-order-container">
-            <h1 class="title">Mi pedido</h1>
+            <h1 class="title">Mis pedidos</h1>
             <div class="my-order-content">
                 <div class="order">
                     <p>
@@ -118,33 +94,37 @@
                     <p>
                         $500.00 COP
                     </p>
+                    <img src="../assets/flechita.svg" alt="">
                 </div>
                 
             </div>
-            <div class="shopping-car">
-                <figure>
-                    <img src="https://s3.amazonaws.com/storage.wobiz.com/199/199302/images/Large/1624565901_2184bbf0442d8c5deac7a900aab94ff5.199302.jpeg" alt="">
-                </figure>
-                <p>Producto</p>
-                <p>Precio</p>
-            </div>  
-            <div class="shopping-car">
-            <figure>
-                <img src="https://s3.amazonaws.com/storage.wobiz.com/199/199302/images/Large/1624565901_2184bbf0442d8c5deac7a900aab94ff5.199302.jpeg" alt="">
-            </figure>
-            <p>Producto</p>
-            <p>Precio</p>
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                        <span>04.24.22</span>
+                        <span>3 articulos</span>
+                    </p>
+                    <p>
+                        $500.00 COP
+                    </p>
+                    <img src="../assets/flechita.svg" alt="">
+                </div>
+                
             </div>
-            <div class="shopping-car">
-            <figure>
-                <img src="https://s3.amazonaws.com/storage.wobiz.com/199/199302/images/Large/1624565901_2184bbf0442d8c5deac7a900aab94ff5.199302.jpeg" alt="">
-            </figure>
-            <p>Producto</p>
-            <p>Precio</p>
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                        <span>04.24.22</span>
+                        <span>3 articulos</span>
+                    </p>
+                    <p>
+                        $500.00 COP
+                    </p>
+                    <img src="../assets/flechita.svg" alt="">
+                </div>
+                
             </div>
-        </div>
-      
+        </div>    
     </section>
-    
 </body>
 </html>
